@@ -3,24 +3,27 @@ import java.util.Random;
 public class ContaTerminal {
     public static void main(String[] args) {
 
+        //Gerador aleatorio de conta
         Random numeroRandom = new Random();
         Integer numero = numeroRandom.nextInt(9999);
         
+        Scanner scan = new Scanner(System.in);
+        
 
-        Scanner nomeClienteScanner = new Scanner(System.in);
+        //Entrada de nome
         System.out.print("Olá, Digite seu nome completo, por favor :");
-        String nomeCliente = nomeClienteScanner.nextLine();
+        String nomeCliente = scan.nextLine();
         
 
 
+        //Entrada número agência
         System.out.print("Por favor, digite o cogigo da agência : XXXX ");
-        Scanner agenciasScanner= new Scanner(System.in);
-        Integer agencia = agenciasScanner.nextInt();
+        Integer agencia = scan.nextInt();
 
 
+        //Entrada depósito
         System.out.print(" O valor a ser depositado : R$00.00 ");
-        Scanner saldoScanner= new Scanner(System.in);
-        double saldo = saldoScanner.nextDouble();
+        double saldo = scan.nextDouble();
 
     
 
@@ -29,6 +32,7 @@ public class ContaTerminal {
 
 
         System.out.println("Olá " + nomeCliente +", obrigado por criar uma conta em nosso banco, sua agência é " + agencia +", sua conta é Nº "+ numero + " e seu saldo é R$"+ saldo + " e já está disponível para saque.");
+        scan.close();
     }
 
     
