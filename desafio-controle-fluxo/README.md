@@ -1,7 +1,9 @@
 # DIO - Trilha Java Básico
 www.dio.me
 
-#### Autores
+### Autor
+- [Gleyson Sampaio](https://github.com/guiillhe)
+#### Desafiado por 
 - [Gleyson Sampaio](https://github.com/glysns)
 
 ## Controle de Fluxo - Desafio
